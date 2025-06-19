@@ -27,8 +27,8 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
 		{
 			unsigned long dwValue;
 
-			if (check((void*)0x747483, 0x89, "Initialize game state", true)) nop(0x747483, 6);
-			else if (check((void*)0x7474D3, 0x89, "Initialize game state", false)) nop(0x7474D3, 6);
+			//if (check((void*)0x747483, 0x89, "Initialize game state", true)) nop(0x747483, 6);
+			//else if (check((void*)0x7474D3, 0x89, "Initialize game state", false)) nop(0x7474D3, 6);
 
 			dwValue = 5;
 			patch(0xC8D4C0, &dwValue, 4); // Skip ads
